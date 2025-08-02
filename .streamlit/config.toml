@@ -1,0 +1,21 @@
+# .streamlit/config.toml
+
+[theme]
+# Perfektes Black & White Theme
+primaryColor = "#0d1117"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#fcfcfc"
+textColor = "#0d1117"
+
+[server]
+# CORS deaktiviert lassen (Standard)
+enableCORS = false
+# XSRF-Schutz nicht deaktivieren, daher Zeile entfernt (Standard = true)
+
+[client]
+# Der moderne Weg, um die obere Leiste zu verstecken
+toolbarMode = "minimal"
+
+[browser]
+# Sammlung von Nutzungsstatistiken deaktiviert
+gatherUsageStats = false
