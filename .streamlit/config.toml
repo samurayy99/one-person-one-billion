@@ -18,4 +18,6 @@ toolbarMode = "minimal"
 
 [browser]
 # Sammlung von Nutzungsstatistiken deaktiviert
-gatherUsageStats = false
+gatherUsageStats = false[ui]
+hideTopBar = true
+hideSidebarNav = true
