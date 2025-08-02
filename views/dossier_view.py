@@ -292,7 +292,7 @@ def render_business_overview(blueprint: Dict):
         # Column 1: Market & Financial Overview
         if business_data['financial']:
             with st.container(border=True):
-                st.markdown("#### 💰 Market & Financial")
+                st.markdown("#### Market & Financial")
                 for label, value in business_data['financial'].items():
                     st.markdown(f"**{label}:**  \n{value}")
                     st.markdown("")  # Spacing
@@ -301,7 +301,7 @@ def render_business_overview(blueprint: Dict):
         # Column 2: Business Model Core
         if business_data['business_model']:
             with st.container(border=True):
-                st.markdown("#### 🏢 Business Model")
+                st.markdown("#### Business Model")
                 for label, value in business_data['business_model'].items():
                     st.markdown(f"**{label}:**  \n{value}")
                     st.markdown("")  # Spacing
@@ -310,7 +310,7 @@ def render_business_overview(blueprint: Dict):
         # Column 3: Strategy & Execution
         if business_data['strategy']:
             with st.container(border=True):
-                st.markdown("#### ⚡ Strategy & Execution")
+                st.markdown("#### Strategy & Execution")
                 for label, value in business_data['strategy'].items():
                     st.markdown(f"**{label}:**  \n{value}")
                     st.markdown("")  # Spacing
