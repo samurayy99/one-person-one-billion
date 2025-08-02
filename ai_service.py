@@ -624,7 +624,7 @@ class AIService:
             # Enhanced API call with specialized configuration for startup expertise
             response = self._make_api_call(
                 messages=chat_history,
-                model="gpt-4o",  # Premium model for premium expertise
+                model="gpt-4.1",  # Premium model for premium expertise
                 max_tokens=1500,  # More detailed, comprehensive responses
                 temperature=0.8,  # Slightly higher for creative business insights
                 top_p=0.95  # High quality tokens for professional discourse
