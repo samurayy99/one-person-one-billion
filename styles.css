@@ -1,0 +1,186 @@
+/* Globale Styles */
+.stApp {
+    background-color: #FFFFFF !important;
+}
+
+/* Titel und Header dunkel machen */
+h1, h2, h3, h4, h5, h6 {
+    color: #0d1117 !important;
+}
+
+/* REDUZIERTER LEERRAUM: Weniger Abstand zwischen Elementen */
+.stMarkdown {
+    margin-bottom: 0.25rem !important;
+}
+
+/* Weniger Abstand nach Selectbox und Text Input */
+div[data-testid="stSelectbox"], div[data-testid="stTextInput"] {
+    margin-bottom: 0.25rem !important;
+}
+
+/* Weniger Abstand nach Buttons */
+.stButton {
+    margin-bottom: 0.25rem !important;
+}
+
+/* Weniger Abstand zwischen Spalten */
+div[data-testid="stHorizontalBlock"] {
+    gap: 1rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+/* WENIGER ABSTAND ZWISCHEN SUCHFELDERN UND KARTEN */
+div[data-testid="stVerticalBlock"] {
+    margin-top: 0.1rem !important;
+}
+
+/* Container-Abstand reduzieren */
+div[data-testid="stVerticalBlock"] > div[data-testid="stVerticalBlock"] {
+    margin-top: 0.05rem !important;
+}
+
+/* Erste Kartenreihe näher an Suchfelder */
+div[data-testid="stHorizontalBlock"]:first-of-type {
+    margin-top: 0.1rem !important;
+}
+
+/* EXTRA: Container-Padding reduzieren für kompakteren Suchbereich */
+div[data-testid="stVerticalBlock"] > div[data-testid="stHorizontalBlock"] {
+    padding: 0.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Karten-Container im Explorer-Grid */
+div[data-testid="stHorizontalBlock"] > div[data-testid="stVerticalBlock"] {
+    height: 360px !important;             /* Höhe für 3-Zeiler-Titel – alle Karten gleich */
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;  /* Inhalt oben, Button mit margin-top: auto */
+
+    background-color: #fcfcfc !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04) !important;
+}
+
+
+
+/* Titel auf 3 Zeilen begrenzen, aber ohne Ellipsis */
+div[data-testid="stHorizontalBlock"] h3 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    line-clamp: 3 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    max-height: 3.6em !important;        /* Explizite Höhenbegrenzung */
+    margin-bottom: 0.25rem !important;   /* weniger Luft */
+    color: #0d1117 !important;
+    font-size: 0.9rem !important;        /* noch kleiner Font */
+    line-height: 1.2 !important;         /* kompaktere Zeilen */
+}
+
+div[data-testid="stVerticalBlock"] small {
+    color: #555 !important;
+    font-weight: 500 !important;
+}
+
+/* Button am unteren Rand */
+div[data-testid="stHorizontalBlock"] .stButton {
+    margin-top: auto !important;
+    padding-top: 1rem !important;
+}
+
+/* Button-Styling */
+.stButton > button {
+    background-color: #0d1117 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500 !important;
+}
+
+.stButton > button:hover {
+    background-color: #1f2937 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ==========================================================
+   CHAT INTERFACE STYLING
+   ========================================================== */
+
+/* Chat Container Styling */
+div[data-testid="stVerticalBlock"] > div[data-testid="stVerticalBlock"] {
+    background-color: #f8f9fa !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin-top: 1rem !important;
+}
+
+
+
+
+
+/* Chat Input Styling */
+div[data-testid="stTextInput"] {
+    margin-bottom: 1rem !important;
+}
+
+div[data-testid="stTextInput"] > div > div > input {
+    border: 2px solid #e9ecef !important;
+    border-radius: 8px !important;
+    padding: 0.75rem !important;
+    font-size: 1rem !important;
+    color: #0d1117 !important;
+    background-color: white !important;
+}
+
+div[data-testid="stTextInput"] > div > div > input:focus {
+    border-color: #0d1117 !important;
+    box-shadow: 0 0 0 2px rgba(13, 17, 23, 0.1) !important;
+}
+
+/* Chat History Styling */
+div[data-testid="stVerticalBlock"] .stMarkdown {
+    color: #0d1117 !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Chat Button Styling */
+div[data-testid="stVerticalBlock"] .stButton > button {
+    background-color: #0d1117 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500 !important;
+    min-width: 80px !important;
+}
+
+div[data-testid="stVerticalBlock"] .stButton > button:hover {
+    background-color: #1f2937 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Chat Message Styling */
+div[data-testid="stVerticalBlock"] strong {
+    color: #0d1117 !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stVerticalBlock"] em {
+    color: #6c757d !important;
+    font-style: italic !important;
+}
+
+/* Spinner Styling */
+div[data-testid="stSpinner"] {
+    color: #0d1117 !important;
+} 
